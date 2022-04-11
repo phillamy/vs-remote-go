@@ -20,6 +20,6 @@ func handle(w http.ResponseWriter, r *http.Request) {
 func main() {
 	portNumber := "9000"
 	http.HandleFunc("/", handle)
-	fmt.Println("Server listening on port ", portNumber)
+	fmt.Println("WAKE UP Server listening on port ", portNumber)
 	http.ListenAndServe(":"+portNumber, nil)
 }
